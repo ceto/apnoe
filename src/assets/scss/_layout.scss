@@ -1,0 +1,31 @@
+.row.container {
+  @include breakpoint(medium) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+.ps {
+  padding:4rem 0;
+}
+
+.bgxlight, {
+  background-color: scale-color($primary-color, $lightness: 95%);
+}
+
+.bglight, {
+  background-color: scale-color($primary-color, $lightness: 58%);
+  color: scale-color($body-font-color, $lightness: -15%);
+
+}
+
+.bginverse {
+  background-color: $primary-color;
+  color:scale-color($primary-color, $lightness: 95%);
+  a {
+    color:scale-color($primary-color, $lightness: 58%);
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}

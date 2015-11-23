@@ -1,0 +1,15 @@
+.sitebottom {
+  padding:4rem 0;
+  a {
+    color:inherit;
+    &:hover,&:focus {
+      color:$primary-color;
+    }
+  }
+}
+
+.sitefooter {
+  font-family: $sans-font-family;
+  font-weight: 300;
+  padding:1rem 0;
+}
