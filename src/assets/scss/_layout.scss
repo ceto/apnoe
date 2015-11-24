@@ -9,15 +9,7 @@
   padding:4rem 0;
 }
 
-.bgxlight, {
-  background-color: scale-color($primary-color, $lightness: 95%);
-}
 
-.bglight, {
-  background-color: scale-color($primary-color, $lightness: 58%);
-  color: scale-color($body-font-color, $lightness: -15%);
-
-}
 
 .bginverse {
   background-color: $primary-color;
@@ -28,4 +20,16 @@
       color: #fff;
     }
   }
+}
+
+.bgxlight, {
+  background-color: scale-color($primary-color, $lightness: 95%);
+  color:$body-font-color;
+}
+
+.bglight, {
+  background-color: scale-color($primary-color, $lightness: 58%);
+  color: scale-color($body-font-color, $lightness: -15%);
+  color:$body-font-color;
+
 }

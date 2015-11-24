@@ -13,7 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "~6.0.1"
+    "foundation-sites": "~6.0.3"
   },
   "overrides": {
     "foundation-sites": {
