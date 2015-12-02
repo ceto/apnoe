@@ -9,22 +9,32 @@
   padding:4rem 0;
 }
 
-
-
 .bginverse {
   background-color: $primary-color;
-  color:scale-color($primary-color, $lightness: 95%);
+  color:rgba($white,.95);
   a {
-    color:scale-color($primary-color, $lightness: 58%);
+    color:rgba($white,.58);
     &:hover, &:focus {
-      color: #fff;
+      color: $white;
     }
   }
+
+  .ccol-1 & { background-color: $primary-color-v1; }
+  .ccol-2 & { background-color: $primary-color-v2; }
+  .ccol-3 & { background-color: $primary-color-v3; }
+  .ccol-4 & { background-color: $primary-color-v4; }
+
 }
 
-.bgxlight, {
+.bgxlight {
   background-color: scale-color($primary-color, $lightness: 95%);
+  .ccol-1 & { background-color: scale-color($primary-color-v1, $lightness: 95%); }
+  .ccol-2 & { background-color: scale-color($primary-color-v2, $lightness: 95%); }
+  .ccol-3 & { background-color: scale-color($primary-color-v3, $lightness: 95%); }
+  .ccol-4 & { background-color: scale-color($primary-color-v4, $lightness: 95%); }
+
   color:$body-font-color;
+
 }
 
 .bglight, {

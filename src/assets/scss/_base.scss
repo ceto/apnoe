@@ -1,7 +1,35 @@
 // Links
 a {
+  color: $anchor-color;
   font-weight: $global-weight-bold;
+  text-decoration: $anchor-text-decoration;
+  line-height: inherit;
+  cursor: pointer;
+
+  .ccol-1 & { color: $primary-color-v1;}
+  .ccol-2 & { color: $primary-color-v2;}
+  .ccol-3 & { color: $primary-color-v3;}
+  .ccol-4 & { color: $primary-color-v4;}
+
+  &:hover,
+  &:focus {
+    color: $anchor-color-hover;
+    .ccol-1 & { color: scale-color($primary-color-v1, $lightness: -14%);}
+    .ccol-2 & { color: scale-color($primary-color-v2, $lightness: -14%);}
+    .ccol-3 & { color: scale-color($primary-color-v3, $lightness: -14%);}
+    .ccol-4 & { color: scale-color($primary-color-v4, $lightness: -14%);}
+
+    @if $anchor-text-decoration-hover != $anchor-text-decoration {
+      text-decoration: $anchor-text-decoration-hover;
+    }
+
+
+
+
+  }
 }
+
+
 .lead {
   //margin-bottom: 1.5rem;
 }
@@ -13,12 +41,7 @@ blockquote {
   border-radius: 0 $global-radius/4 $global-radius/4 0;
   border-left:6px solid $primary-color;
   font-size: 112.5%;
-
   > p {
-    //text-transform: uppercase;
-    //opacity: .5;
-    //font-weight: $global-weight-bold;
-    //font-style: italic;
     margin-bottom: 0;
   }
 }
@@ -27,36 +50,32 @@ blockquote {
   font-family: $sans-font-family;
   text-transform: uppercase;
   font-weight: $global-weight-bold;
+  color:rgba($white,.95) !important;
+  background-color: $button-background;
+  .ccol-1 & { background-color: $primary-color-v1;}
+  .ccol-2 & { background-color: $primary-color-v2;}
+  .ccol-3 & { background-color: $primary-color-v3;}
+  .ccol-4 & { background-color: $primary-color-v4;}
+
+  &:hover, &:focus {
+    background-color: scale-color($button-background, $lightness: -15%);
+    .ccol-1 & { background-color: scale-color($primary-color-v1, $lightness: -15%);}
+    .ccol-2 & { background-color: scale-color($primary-color-v2, $lightness: -15%);}
+    .ccol-3 & { background-color: scale-color($primary-color-v3, $lightness: -15%);}
+    .ccol-4 & { background-color: scale-color($primary-color-v4, $lightness: -15%);}
+  }
+
+
+
   &.hollow {
     border-width:3px;
   }
 
   .bginverse & {
     @include button(false, scale-color($primary-color, $lightness: 95%), scale-color($primary-color, $lightness: 80%), $primary-color, solid);
-    color:$primary-color;
+    color:$primary-color !important;
     &:hover, &:focus {
       color: $primary-color;
-    }
-  }
-}
-.tabs {
-  border:none;
-}
-.tabs-title {
-  > a {
-    font-weight: $global-weight-bold;
-
-
-    @include breakpoint(large) {
-      font-size: .875rem;
-    }
-    &:hover,&:focus, &[aria-selected="true"] {
-        background-color: scale-color($tab-background, $lightness: 95%);
-        color:$body-font-color;
-    }
-
-    &[aria-selected="true"] {
-        background-color: $white;
     }
   }
 }

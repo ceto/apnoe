@@ -47,7 +47,15 @@
 $global-width: rem-calc(1800);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #660099;
+
+$primary-color-v0: #3a3a3a; //fekete
+$primary-color-v1: #336699; //kek
+$primary-color-v2: #669933; //zold
+$primary-color-v3: #660099; //lila
+$primary-color-v4: #efa331; //sarga
+
+$primary-color: $primary-color-v0;
+
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -83,7 +91,7 @@ $breakpoints: (
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -230,7 +238,7 @@ $button-margin: 0 $global-margin $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: #fff;
+$button-color: rgba($white,.95);
 $button-color-alt: #000;
 $button-radius: $global-radius;
 $button-sizes: (
@@ -366,7 +374,7 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+$menu-item-padding: 0.7rem .875rem;
 $menu-icon-spacing: 0.25rem;
 $menu-expand-max: 6;
 
@@ -488,17 +496,18 @@ $show-header-for-stacked: false;
 // --------
 
 $tab-margin: 0;
-$tab-background: $primary-color;
+$tab-background: transparent;
 $tab-background-active: $white;
 $tab-border: transparent;
-$tab-item-color: #fff;
-$tab-item-background-hover: scale-color($tab-background, $lightness: 95%);
+$tab-item-color: rgba($white,.95);
+$tab-item-background-hover: rgba( $white,.17);
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
 $tab-content-border: transparent;
 $tab-content-color: foreground($tab-background, $primary-color);
 $tab-content-padding: 1rem;
+
 
 // 32. Thumbnail
 // -------------
