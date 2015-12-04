@@ -2,7 +2,7 @@
   padding:1rem 0;
 }
 
-.sitelogo {
+a.sitelogo {
   display: inline-block;
   font-size: .666rem;
   line-height: 1;
@@ -11,6 +11,7 @@
   font-family: $sans-font-family;
   //text-align: right;
   position: absolute;
+  color:$body-font-color;
 
   @include breakpoint(medium) {
     position: static;

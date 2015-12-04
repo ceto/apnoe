@@ -15,6 +15,7 @@
 }
 
 .card__title {
+  opacity:1;
   a {
     color:inherit;
   }
@@ -26,7 +27,7 @@
 a.card__more {
   font-family: $sans-font-family;
   font-size: .875rem;
-  color:inherit;
+  // color:inherit;
   line-height: 1;
   //color: scale-color($primary-color, $lightness: 95%);
   //text-decoration: underline;

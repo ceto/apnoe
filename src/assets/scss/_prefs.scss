@@ -51,10 +51,10 @@ $global-lineheight: 1.5;
 $primary-color-v0: #3a3a3a; //fekete
 $primary-color-v1: #336699; //kek
 $primary-color-v2: #669933; //zold
-$primary-color-v3: #660099; //lila
-$primary-color-v4: #efa331; //sarga
+$primary-color-v4: #660099; //lila
+$primary-color-v3: #efa331; //sarga
 
-$primary-color: $primary-color-v0;
+$primary-color: $primary-color-v4;
 
 $secondary-color: #777;
 $success-color: #3adb76;
@@ -130,7 +130,7 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
-$header-small-font-color: $medium-gray;
+$header-small-font-color: inherit;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1.5rem;
 $paragraph-text-rendering: optimizeLegibility;

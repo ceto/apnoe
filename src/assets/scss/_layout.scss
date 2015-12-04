@@ -12,12 +12,12 @@
 .bginverse {
   background-color: $primary-color;
   color:rgba($white,.95);
-  a {
-    color:rgba($white,.58);
-    &:hover, &:focus {
-      color: $white;
-    }
-  }
+  // a {
+  //   color:rgba($white,.58);
+  //   &:hover, &:focus {
+  //     color: $white;
+  //   }
+  // }
 
   .ccol-1 & { background-color: $primary-color-v1; }
   .ccol-2 & { background-color: $primary-color-v2; }
@@ -39,7 +39,14 @@
 
 .bglight, {
   background-color: scale-color($primary-color, $lightness: 58%);
+
+  .ccol-1 & { background-color: scale-color($primary-color-v1, $lightness: 58%); }
+  .ccol-2 & { background-color: scale-color($primary-color-v2, $lightness: 58%); }
+  .ccol-3 & { background-color: scale-color($primary-color-v3, $lightness: 58%); }
+  .ccol-4 & { background-color: scale-color($primary-color-v4, $lightness: 58%); }
+
   color: scale-color($body-font-color, $lightness: -15%);
-  color:$body-font-color;
+
+  //color:$body-font-color;
 
 }

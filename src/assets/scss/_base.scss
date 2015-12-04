@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+  opacity: .9;
+  small {
+    opacity: .75;
+  }
+}
+
+
 // Links
 a {
   color: $anchor-color;
@@ -11,6 +19,7 @@ a {
   .ccol-3 & { color: $primary-color-v3;}
   .ccol-4 & { color: $primary-color-v4;}
 
+
   &:hover,
   &:focus {
     color: $anchor-color-hover;
@@ -22,11 +31,16 @@ a {
     @if $anchor-text-decoration-hover != $anchor-text-decoration {
       text-decoration: $anchor-text-decoration-hover;
     }
-
-
-
-
   }
+
+  .bginverse & {
+    color:rgba($white,.8);
+    &:hover, &:focus {
+      color:$white;
+    }
+  }
+
+
 }
 
 
@@ -37,10 +51,17 @@ a {
 
 blockquote {
   @include clearfix();
-  background-color: scale-color($primary-color, $lightness: 95%);
-  border-radius: 0 $global-radius/4 $global-radius/4 0;
-  border-left:6px solid $primary-color;
+
   font-size: 112.5%;
+  // border-radius: 0 $global-radius/8 $global-radius/8 0;
+
+  background-color: rgba($primary-color,.0333);
+  border-left:6px solid $primary-color;
+  .ccol-1 & { background-color: rgba($primary-color-v1,.0333); border-color: $primary-color-v1;}
+  .ccol-2 & { background-color: rgba($primary-color-v2,.0333); border-color: $primary-color-v2;}
+  .ccol-3 & { background-color: rgba($primary-color-v3,.0333); border-color: $primary-color-v3;}
+  .ccol-4 & { background-color: rgba($primary-color-v4,.0333); border-color: $primary-color-v4;}
+
   > p {
     margin-bottom: 0;
   }
@@ -72,10 +93,14 @@ blockquote {
   }
 
   .bginverse & {
-    @include button(false, scale-color($primary-color, $lightness: 95%), scale-color($primary-color, $lightness: 80%), $primary-color, solid);
+    background-color: rgba($white,.9);
     color:$primary-color !important;
+    .ccol-1 & { color: $primary-color-v1 !important;}
+    .ccol-2 & { color: $primary-color-v2 !important;}
+    .ccol-3 & { color: $primary-color-v3 !important;}
+    .ccol-4 & { color: $primary-color-v4 !important;}
     &:hover, &:focus {
-      color: $primary-color;
+      background-color: $white;
     }
   }
 }
