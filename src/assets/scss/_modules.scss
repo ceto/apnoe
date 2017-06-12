@@ -27,26 +27,23 @@
 a.card__more {
   font-family: $sans-font-family;
   font-size: .875rem;
-  // color:inherit;
   line-height: 1;
-  //color: scale-color($primary-color, $lightness: 95%);
-  //text-decoration: underline;
+
 }
+
 .card__fig {
   margin:0;
   padding:0;
 }
 
 .illist {
-  //list-style-type: none;
-  //margin:1rem 0 0;
+
   margin-top: 1rem;
   margin-bottom: 1rem;
   > li {
    margin-bottom:$paragraph-margin-bottom*1.25 !important;
    h4 {
-    //font-size: 1.25rem;
-    //font-weight: 400;
+
     opacity: .9;
    }
   }
