@@ -3942,11 +3942,32 @@ a.sitelogo {
   border-radius: 1rem 1rem 0 0;
   margin: 0 0 2rem 0; }
 
+.card.bgxlight a {
+  color: #efa331; }
+
 .card__head {
   padding: 1rem; }
 
 .card__foot {
   padding: .5rem 1rem .5rem 1rem; }
+
+.card__label {
+  display: inline-block;
+  padding: .333em .25em;
+  background-color: #efa331;
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-size: .75rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .5rem; }
+
+.card__contact {
+  font-size: .875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0; }
 
 .card__title {
   opacity: 1; }
