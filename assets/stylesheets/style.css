@@ -3865,6 +3865,9 @@ a.sitelogo {
 
 .hero {
   background-color: #333333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fefefe; }
   .hero .page__subtitle {
     color: #fefefe !important; }
